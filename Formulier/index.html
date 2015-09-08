@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulier opdracht</title>
+</head>
+<body>
+    <header></header>
+
+   <article>
+
+    <h1>Aanmelden</h1>
+
+    <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.
+    </p>
+
+    <p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.
+    </p>
+
+    <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+    <br>
+Voor vragen of opmerkingen kunt u <a href="https://cmd.dmci.hva.nl/NL/Paginas/Wie-Wat-Waar/wie-wat-waar.aspx">contact</a> met ons op.
+    </p>
+
+    <form>
+        <fieldset>
+        <legend>Contactgegevens</legend>
+            <p>Naam:
+            <br>
+                <input type="text" name="naam" size="30" maxlength="30" placeholder="Laura Jansen" required>
+            </p>
+            <p>Bedrijf:
+            <br>
+                <input type="text" name="bedrijf" size="30" maxlength="30" placeholder="Comptechworld">
+            </p>
+            <p>Adres:
+            <br>
+                <input type="text" name="adres" size="30" maxlength="30" placeholder="Broadwayweg 177" required>
+            </p>
+            <p>Postcode:
+            <br>
+                <input type="text" name="postcode" size="30" maxlength="30" placeholder="1271 XY" pattern="[1-9][0-9]{3}\s?[a-zA]{2}" required>
+            </p>
+            <p>Plaats:
+            <br>
+                <input type="text" name="plaats" size="30" maxlength="30" placeholder="Leeuwarden">
+            </p>
+            <p>Telefoon:
+            <br>
+                <input type="text" name="telefoon" size="30" maxlength="30" placeholder="035-1234567" required>
+            </p>
+            <p>Mail:
+            <br>
+                <input type="text" name="mail" size="30" maxlength="30" placeholder="laurajansen@comptechworld.nl" required>
+            </p>
+        </fieldset>
+
+    <p>Ik wil mij aanmelden</p>
+
+        <p>
+            <input type="radio" name="genre" value="project">
+        voor een project
+        </p>
+        <p>
+            <input type="radio" name="genre" value="project">
+        als stagebedrijf
+        </p>
+
+        <fieldset>
+          <legend>Voor een project</legend>
+               <fieldset>
+                <p>Titel:
+                <br>
+                    <input type="text" name="titel" size="30" maxlength="30" placeholder="Save the unicorns" required>
+                </p>
+                <p>Opdrachtomschrijving:
+                <br>
+                    <textarea name="opdrachtomschrijving" cols="35" rows="5" placeholder="Schrijf hier de opdrachtomschrijving..." required></textarea>
+                </p>
+                <p>Doelgroepomschrijving:
+                <br>
+                    <textarea name="doelgroepomschrijving" cols="35" rows="5" placeholder="Schrijf hier de doelgroepomschrijving..."></textarea>
+                </p>
+                <p>Doelstelling/intentie van het project:
+                <br>
+                    <textarea name="stelling van het project" cols="35" rows="5" placeholder="Schrijf hier de doelstelling/intentie van het project..." required></textarea>
+                </p>
+                <p>Looptijd:
+                <br>
+                    <input type="text" name="looptijd" size="30" maxlength="30" placeholder="">
+                </p>
+                <p>Deadline:
+                <br>
+                    <input type="date" name="deadline" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>Geschikt voor</p>
+                <select>
+                    <option value="kies">Kies een optie</option>
+                    <option value="eerstejaars">Eerstejaars studenten</option>
+                    <option value="tweedejaars">Tweedejaars studenten</option>
+                    <option value="derdejaars">Derdejaars studenten</option>
+                    <option value="afstudeerderds">Afstudeeer studenten</option>
+                    <option value="onbekend">Onbekend</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <p>Opmerking
+                <br>
+                    <textarea name="opmerking" cols="35" rows="5" placeholder="Schrijf hier uw overige opmerkingen..."></textarea>
+                </p>
+            </fieldset>
+        </fieldset>
+
+    <br>
+
+        <fieldset>
+            <legend>Als stagebedrijf</legend>
+                    <fieldset>
+                       <p>Geschikt voor</p>
+                        <select>
+                            <option value="kies">Kies een optie</option>
+                            <option value="tweedejaars">Tweedejaars studenten</option>
+                            <option value="afstudeerderds">Afstudeeer studenten</option>
+                            <option value="onbekend">Onbekend</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <p>Hoe lang is de stage?</p>
+                        <p>
+                            <input type="radio" name="stage" value="5-10">
+                        5 tot 10 weken
+                        </p>
+                        <p>
+                            <input type="radio" name="stage" value="10-20">
+                        10 tot 20 weken
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <p>Beschrijving stagewerkzaamheden
+                        <br>
+                            <textarea name="stagewerkzaamheden" cols="35" rows="5" placeholder="Schrijf hier wat de stagewerkzaamheden zijn..." required></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <p>Beschrijving stagebedrijf</p>
+                        <p>Bedrijfsnaam
+                        <br>
+                            <input type="text" name="bedrijfsnaam" size="30" maxlength="30" placeholder="Unicorn Island" required>
+                        </p>
+                        <p>Adres
+                        <br>
+                            <input type="text" name="adres" size="30" maxlength="30" placeholder="Julianalaan 28" required>
+                        </p>
+                        <p>Postcode
+                        <br>
+                            <input type="text" name="postcode" size="30" maxlength="30" placeholder="2247 GS" required>
+                        </p>
+                        <p>Plaats
+                        <br>
+                            <input type="text" name="plaats" size="30" maxlength="30" placeholder="Drachten">
+                        </p>
+                        <p>Sector
+                        <br>
+                            <input type="text" name="sector" size="30" maxlength="30" placeholder="Unicornerino" required>
+                        </p>
+                        <p>Core business
+                        <br>
+                            <input type="text" name="business" size="30" maxlength="30" placeholder="Saving unicorns" required>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <p>Opmerking
+                        <br>
+                            <textarea name="opmerking" cols="35" rows="5" placeholder="Schrijf hier uw overige opmerkingen..."></textarea>
+                        </p>
+                    </fieldset>
+        </fieldset>
+
+        <button type="submit">Verstuur</button>
+
+    </form>
+
+    </article>
+
+    <footer>&copy;Florence Hoogveld, 2015</footer>
+</body>
+</html>
