@@ -3,9 +3,12 @@ var stageButton = document.querySelector("#stageButton");
 var project = document.querySelector("#project");
 var stage = document.querySelector("#stage");
 
+
+//voegt classes toe
 project.classList.add("onzichtbaar");
 stage.classList.add("onzichtbaar");
 
+//maakt function aan toogle form
 function toggleForm () {
     if (projectButton.checked) {
      project.classList.remove("onzichtbaar");
